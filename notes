@@ -65,8 +65,7 @@ tl.fromTo(".red", {
     backgroundColor: 'green',
     borderRadius: '50%',
     duration: 1,
-},
-"+=1");
+});
 
 //green box behaviour
 tl.fromTo(".green", {
@@ -77,8 +76,7 @@ tl.fromTo(".green", {
     backgroundColor: 'blue',
     borderRadius: '50%',
     duration: 1,
-},
-"-=1");
+});
 
 //blue box
 tl.fromTo(".blue", {
@@ -89,8 +87,7 @@ tl.fromTo(".blue", {
     backgroundColor: 'yellow',
     borderRadius: '50%',
     duration: 1,
-},
-"-=1");
+});
 
 //yellow box
 tl.fromTo(".yellow", {
@@ -101,5 +98,4 @@ tl.fromTo(".yellow", {
     backgroundColor: 'red',
     borderRadius: '50%',
     duration: 1,
-},
-"-=1");
+});
