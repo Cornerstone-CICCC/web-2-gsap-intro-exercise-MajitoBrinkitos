@@ -103,3 +103,28 @@ tl.fromTo(".yellow", {
     duration: 1,
 },
 "-=1");
+
+//disappearing
+//yellow becomes red element
+tl.to(".yellow", {
+    x: '-100vw',
+    duration: 1,
+}, "+=1");
+
+//red becomes green element
+tl.to(".red", {
+    x: '100vw',
+    duration: 1,
+}, "-=1");
+
+//green becomes blue element
+tl.to(".green", {
+    x: '100vw',
+    duration: 1,
+}, "-=1");
+
+//blue becomes yellow element
+tl.to(".blue", {
+    x: '-100vw',
+    duration: 1,
+}, "-=1");

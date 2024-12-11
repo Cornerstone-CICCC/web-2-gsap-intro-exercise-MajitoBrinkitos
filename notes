@@ -65,7 +65,8 @@ tl.fromTo(".red", {
     backgroundColor: 'green',
     borderRadius: '50%',
     duration: 1,
-});
+},
+"+=1");
 
 //green box behaviour
 tl.fromTo(".green", {
@@ -76,7 +77,8 @@ tl.fromTo(".green", {
     backgroundColor: 'blue',
     borderRadius: '50%',
     duration: 1,
-});
+},
+"-=1");
 
 //blue box
 tl.fromTo(".blue", {
@@ -87,7 +89,8 @@ tl.fromTo(".blue", {
     backgroundColor: 'yellow',
     borderRadius: '50%',
     duration: 1,
-});
+},
+"-=1");
 
 //yellow box
 tl.fromTo(".yellow", {
@@ -97,5 +100,31 @@ tl.fromTo(".yellow", {
     y: '-81vh',
     backgroundColor: 'red',
     borderRadius: '50%',
+    duration: 1,
+},
+"-=1");
+
+//disappearing
+//yellow becomes red element
+tl.to(".yellow", {
+    x: '-100vw',
+    duration: 1,
+});
+
+//red becomes green element
+tl.to(".red", {
+    x: '100vw',
+    duration: 1,
+});
+
+//green becomes blue element
+tl.to(".green", {
+    x: '100vw',
+    duration: 1,
+});
+
+//blue becomes yellow element
+tl.to(".blue", {
+    x: '-100vw',
     duration: 1,
 });
